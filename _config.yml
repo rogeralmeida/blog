@@ -34,8 +34,11 @@ plugins:
   - jekyll-notion
 
 notion:
+  fetch_on_watch: true
   databases:
     - id: 23b4bee8b02849079446e3d8a57d89fe
+      filter: { "property": "Draft", "checkbox": { "equals": false} }
+      sorts: [{ "timestamp": "created_time", "direction": "ascending" }]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
