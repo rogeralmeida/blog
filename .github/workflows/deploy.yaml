@@ -30,7 +30,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle exec jekyll build
       # All commands after this point have access to the AWS CLI
-      - run: aws s3 ls
+      - run: aws s3 sync _site/ ${{ vars.BUCKET_NAME }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
