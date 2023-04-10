@@ -12,7 +12,7 @@ on:
 jobs:
   generate-content:
     env:
-      NOTION_TOKEN: ${secrets.NOTION_TOKEN}
+      NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
