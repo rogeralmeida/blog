@@ -17,7 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
+      - name: install AWS CLI
+        uses: chrislennon/action-aws-cli@v1.1
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v3
         with:
@@ -30,3 +31,8 @@ jobs:
           ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle exec jekyll build
+      # All commands after this point have access to the AWS CLI
+      - run: aws s3 ls
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
