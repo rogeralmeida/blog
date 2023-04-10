@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<ul>
+  {%- for post in site.posts %}
+    <h3>
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.cover }}" style="height: 5em; width: 100%; object-fit: cover;"/>
+        {{ post.title | escape }}
+      </a>
+    </h3>
+  {%- endfor %}
+</ul>
