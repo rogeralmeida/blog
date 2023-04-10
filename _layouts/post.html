@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-<p>{{ page.date | date_to_string }}</p>
+<img src="{{ page.cover }}" style="height: 5em; width: 100%; object-fit: cover;"/>
 <h2>{{ page.title }}</h2>
-
 {{ content }}
-
 <br>
+<p>{{ page.date | date_to_string }}</p>
