@@ -28,7 +28,7 @@ twitter_username: roger-almeida.com
 github_username:  rogeralmeida
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-notion
