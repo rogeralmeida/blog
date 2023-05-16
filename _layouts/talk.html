@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Roger Almeida {{ page.title }}</title>
+
+	<link rel="stylesheet" href="/dist/reset.css">
+	<link rel="stylesheet" href="/dist/reveal.css">
+	<link rel="stylesheet" href="/dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="/plugin/highlight/monokai.css">
+	<style>
+		.post-it {
+			background: #fefabc;
+			padding: 15px;
+			font-size: 13px;
+			color: #000;
+			text-align: center;
+
+			-moz-transform: rotate(1deg);
+			-webkit-transform: rotate(1deg);
+			-o-transform: rotate(1deg);
+			-ms-transform: rotate(1deg);
+			transform: rotate(1deg);
+
+			box-shadow: 0px 4px 6px #333;
+			-moz-box-shadow: 0px 4px 6px #333;
+			-webkit-box-shadow: 0px 4px 6px #333;
+			width: 97px;
+			position: relative;
+		}
+
+		.post-it-highlight {
+			background: #ff9900;
+			padding: 15px;
+			font-size: 13px;
+			font-weight: bold;
+			color: #000;
+			text-align: center;
+
+			-moz-transform: rotate(1deg);
+			-webkit-transform: rotate(1deg);
+			-o-transform: rotate(1deg);
+			-ms-transform: rotate(1deg);
+			transform: rotate(1deg);
+
+			box-shadow: 0px 4px 6px #333;
+			-moz-box-shadow: 0px 4px 6px #333;
+			-webkit-box-shadow: 0px 4px 6px #333;
+			width: 97px;
+			position: relative;
+		}
+
+		.post-it-blocked {
+			background: #ff0000;
+			padding: 15px;
+			font-size: 13px;
+			font-weight: bold;
+			color: #000;
+			text-align: center;
+
+			-moz-transform: rotate(1deg);
+			-webkit-transform: rotate(1deg);
+			-o-transform: rotate(1deg);
+			-ms-transform: rotate(1deg);
+			transform: rotate(1deg);
+
+			box-shadow: 0px 4px 6px #333;
+			-moz-box-shadow: 0px 4px 6px #333;
+			-webkit-box-shadow: 0px 4px 6px #333;
+			width: 97px;
+			position: relative;
+		}
+
+		.reveal section img.person {
+			background: initial;
+			border: none;
+			box-shadow: none;
+			height: 62px;
+			z-index: 1;
+			top: -20px;
+			position: relative;
+			margin: -13px;
+			margin-left: -5px;
+		}
+
+		.reveal table td {
+			border-bottom: initial;
+		}
+
+		.board table {
+			border-collapse: initial;
+		}
+
+		.board tbody tr {
+			border: none;
+			height: 90px;
+		}
+
+		.board tbody tr td {
+			border-right: solid 1px;
+			border-left: solid 1px;
+		}
+
+		.board thead tr {
+			border: none;
+		}
+
+		.board thead tr td {
+			border-right: solid 1px;
+			border-left: solid 1px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			{{ content }}
+		</div>
+	</div>
+
+	<script src="/dist/reveal.js"></script>
+	<script src="/plugin/notes/notes.js"></script>
+	<script src="/plugin/markdown/markdown.js"></script>
+	<script src="/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
