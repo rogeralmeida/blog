@@ -1,0 +1,261 @@
+---
+layout: talk
+title: "Pair Programming - 1o1"
+date: 2025-10-28 15:57
+comments: true
+sharing: true
+footer: true
+---
+
+<!-- TITLE & AGENDA -->
+<section class="partial-container" data-partial="introduction">
+    <section class="title-slide">
+        <h1>Pair Programming 1o1</h1>
+        <p><em>Collaborate. Code. Succeed.</em></p>
+    </section>
+    <section>
+        <h2>Agenda</h2>
+        <ul>
+            <li>What is Pair Programming?</li>
+            <li>Benefits</li>
+            <li>Challenges</li>
+            <li>Best Practices</li>
+            <li>Tools and Setup</li>
+            <li>Q&amp;A</li>
+        </ul>
+    </section>
+</section>
+
+<!-- WHAT IS PAIR PROGRAMMING? -->
+<section>
+    <section>
+        <h2>What is Pair Programming?</h2>
+        <div style="display: flex;">
+            <div class="column" style="width: 50%;">
+                <img src="/images/pairing/pairing.png" alt="Pair Programming in action" style="width:100%">
+            </div>
+            <div class="column" style="width: 50%;">
+                <p>A collaborative software development technique where two programmers work together at one workstation.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>The Roles: Driver & Navigator</h3>
+        <div style="display: flex;">
+            <div class="column" style="width: 50%;">
+                <ul>
+                    <li><strong>🧑🏼‍✈️ Driver:</strong> Types the code, focuses on tactics.</li>
+                    <li><strong>🗺️ Navigator:</strong> Reviews each line, suggests improvements, and thinks strategically.</li>
+                </ul>
+            </div>
+            <div class="column" style="width: 50%;">
+                <img src="/images/pairing/roles.png" alt="Driver and Navigator roles" style="width:100%">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Engagement</h3>
+        <p>
+            <em>Quick Poll:</em> Have you ever tried pair programming? What was your main takeaway?
+        </p>
+        <!-- Embed a poll tool or use a simple show of hands -->
+    </section>
+</section>
+
+<!-- BENEFITS -->
+<section>
+    <section>
+        <h2>Benefits of Pair Programming</h2>
+        <div style="display: flex;">
+            <img src="/images/pairing/benefits.png" alt="Collaboration benefits" style="width: 45%">
+            <p>Pair programming is not just about writing code—it's about enhancing teamwork and learning.</p>
+        </div>
+    </section>
+    <section>
+        <h3>1. Higher Code Quality 🏅</h3>
+        <ul>
+            <li>Continuous code review reduces bugs and technical debt.</li>
+            <li>Two perspectives catch mistakes early.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>2. Improved Learning & Knowledge Sharing 📚</h3>
+        <ul>
+            <li>Developers pick up new techniques and standards from each other.</li>
+            <li>Junior and senior engineers both benefit.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>3. Better Team Communication 🤝</h3>
+        <ul>
+            <li>Strengthens relationships and understanding between teammates.</li>
+            <li>Encourages open discussion and problem-solving.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Engagement</h3>
+        <p>
+            <em>Discussion:</em> Which benefit would help our team the most?
+        </p>
+    </section>
+</section>
+
+<!-- CHALLENGES -->
+<section>
+    <section>
+        <h2>Challenges</h2>
+        <div style="display: flex;">
+            <p>It’s not always smooth sailing—let's talk about what makes pair programming hard.</p>
+            <img src="/images/pairing/challenges.png" alt="Challenges of pair programming" style="width:50%">
+        </div>
+    </section>
+    <section>
+        <h3>1. Personality Clashes 😣</h3>
+        <ul>
+            <li>Different working styles can create friction.</li>
+        </ul>
+        <blockquote>“Why did you do it that way?”</blockquote>
+    </section>
+    <section>
+        <h3>2. Fatigue 💤</h3>
+        <ul>
+            <li>Pairing can be more mentally taxing than solo work.</li>
+            <li>Breaks are essential!</li>
+        </ul>
+    </section>
+    <section>
+        <h3>3. Pace Mismatch ⏱️</h3>
+        <ul>
+            <li>One person may be faster or more familiar with the task.</li>
+            <li>Solution: Communication & role-switching.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Engagement</h3>
+        <p>
+            <em>Prompt:</em> What challenge would you be most concerned about? How could we overcome it?
+        </p>
+    </section>
+</section>
+
+<!-- BEST PRACTICES -->
+<section>
+    <section>
+        <h2>Techniques & Best Practices</h2>
+        <div style="display: flex; align-items: center;">
+            <img src="/images/pairing/best-practices.png" alt="Pair programming best practices" style="width:40%; padding-left: 1em;">
+            <p>How can we pair up effectively?</p>
+        </div>
+    </section>
+    <section>
+        <h3>1. Switch Roles Regularly 🔄</h3>
+        <div style="display: flex;">
+        <ul>
+            <li>🔀 Alternate between Driver and Navigator every 20-30 minutes.</li>
+            <li>💡 Pomodoro Technique fits well here!</li>
+        </ul>
+            <img src="/images/pairing/clock.png" alt="Pair programming timer" style="width:50%; padding-left: 1em;">
+        </div>
+    </section>
+    <section>
+        <h3>2. Take Breaks ⏸️</h3>
+        <div style="display: flex;">
+            <img src="/images/pairing/timer.png" alt="Pair programming timer" style="width:50%; padding-left: 1em;">
+            <ul>
+                <li>Short breaks help maintain focus and prevent fatigue.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h3>2. Ping pong TDD</h3>
+        <div style="display: flex;">
+        <ul>
+            <li>Member 1 writes a test.</li>
+            <li>Member 2 makes it pass.</li>
+            <li>Pair discuss refactorings</li>
+            <li>Member 2 implements the refactorings.</li>
+            <li>Member 2 writes the next test</li>
+        </ul>
+            <img src="/images/pairing/clock.png" alt="Pair programming timer" style="width:50%; padding-left: 1em;">
+        </div>
+    </section>
+    <section>
+        <h3>3. 10 seconds rule</h3>
+        <ul>
+            <li>If you see a typo, wait 10 seconds before pointing it out.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>4. Your idea first 🙌</h3>
+        <ul>
+            <li>Senior people are open to try other people's ideas.</li>
+            <li>This is not about idea ownership</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Engagement</h3>
+        <p>
+            <em>Prompt:</em> Can you think of other practices that would make pairing enjoyable?
+        </p>
+    </section>
+</section>
+
+<!-- TOOLS & SETUP -->
+<section>
+    <section>
+        <h2>Tools & Setup</h2>
+        <div style="display: flex;">
+        <img src="/images/pairing/tools.png" alt="Pair programming tools" style="width:50%">
+        <p>Get the right environment for a smooth pairing session.</p>
+        </div>
+    </section>
+    <section>
+        <h3>Co-located</h3>
+        <div style="display: flex;">
+            <ul>
+                <li>Single keyboard and mouse</li>
+                <li>Multi-keyboard and mouse</li>
+                <li>Mirror display vs extended display</li>
+                <li>Chairs and desk</li>
+            </ul>
+            <img src="/images/pairing/co-located.png" alt="Co-located pair programming" style="width:45%; padding-left: 1em;">
+        </div>
+    </section>
+    <section>
+        <h3>Remote</h3>
+        <div style="display: flex;">
+            <img src="/images/pairing/remote.png" alt="Remote pair programming" style="width:40%; padding-right: 1em;">
+            <ul>
+                <li><strong>Screen sharing:</strong> Visual Studio Live Share, CodeTogether, Tuple</li>
+                <li>Keep video on</li>
+                <li>Turn video off during breaks</li>
+                <li>Headphones, mics, or speakers are recommended for better audio quality</li>
+                <li>Use hands gestures</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h3>Pro Tip</h3>
+        <ul>
+            <li>Agree on workflows and conventions before you start.</li>
+            <li>Prep your environment—fewer distractions. </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Engagement</h3>
+        <p>
+            <em>Prompt:</em> Which tools do you prefer for collaboration?
+        </p>
+    </section>
+</section>
+
+<!-- Q&A -->
+<section>
+    <section>
+        <h2>Q&amp;A</h2>
+        <div style="display: flex;">
+        <p>What questions do you have?<br><em>Let’s discuss your experiences, concerns, or suggestions!</em></p>
+        <img src="/images/pairing/questions.png" alt="Questions" style="width:40%">
+        </div>
+    </section>
+</section>
